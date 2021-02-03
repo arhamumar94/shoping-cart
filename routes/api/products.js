@@ -16,8 +16,7 @@ route.get('/',(req,res)=>{
 })
 route.post('/', (req, res) => {
     // Validate the values
-    console.log(req.body.price)
-    console.log(req.body.name)
+    
 
     if (isNaN(req.body.price)) {
         return res.status(403).send({
